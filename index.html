@@ -14,7 +14,7 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
-            max-width: 450px;
+            width: 50%;
             background: rgb(245 245 245);
         }
     </style>
@@ -46,19 +46,20 @@
                         console.log('kwlsjhqsklfhklqsh',images)
                         $('#tableBody').append(
                             '<tr class="row">' +
+                                '<td>'+
+                                    '<img class="imageVehicule" src="'+$(this).find('photo').text().split('.jpg')[0]+'.jpg'+'" />'+
+                                '</td>'+
                                 '<td>' +
-                                    $(this).find('reference').text() + '</td> ' +
+                                    "Référence : "+$(this).find('reference').text() + '</td> ' +
                                 '<td>' +
-                                    $(this).find('marque').text() + '</td> ' +
+                                    "Marque : "+$(this).find('marque').text() + '</td> ' +
                                 '<td>' +
-                                    $(this).find('model').text() + '</td> ' +
-                                    '<td>' +
-                                    $(this).find('energie').text() + '</td> ' +
-                                    '<td>' +
-                                    '<td>'+
-
-                                        '<img class="imageVehicule" src="'+$(this).find('photo').text().split('.jpg')[0]+'.jpg'+'" />'+
-                                    '<tr>'+
+                                    "Model : "+$(this).find('model').text() + '</td> ' +
+                                '<td>' +
+                                    "Energie : "+$(this).find('energie').text() + '</td> ' +
+                                '<td>' +
+                                    "Prix : "+$(this).find('prix').text() +
+                                '</td>'+ 
                             '</tr>'
                         );
                     });
