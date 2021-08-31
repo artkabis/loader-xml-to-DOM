@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<client>
+  <date_maj>19/12/2018 10h00</date_maj>
+  <bo_id>97</bo_id>
+  <vehicules>
+    <vehicule>
+      <reference>71366</reference>
+      <marque>
+        <![CDATA[
+          Fiat
+        ]]>
+      </marque>
+      <modele>
+        <![CDATA[
+          500
+        ]]>
+    </modele>
+      <version>
+        <![CDATA[
+          1.3 MULTIJET DPF 16V LOUNGE
+        ]]>
+      </version>
+      <energie>Diesel</energie>
+      <mise_en_circulation>06/04/2010</mise_en_circulation>
+      <kilometrage>86623</kilometrage>
+      <couleur>Gris foncé</couleur>
+      <puissance_reelle>75</puissance_reelle>
+      <puissance_fiscale>4</puissance_fiscale>
+      <boite_de_vitesse>Manuelle</boite_de_vitesse>
+      <nb_portes>3</nb_portes>
+      <nb_places>4</nb_places>
+      <numero_immatriculation>AP-272-TH</numero_immatriculation>
+      <carrosserie>Berline</carrosserie>
+      <premiere_main>false</premiere_main>
+      <kilometrage_garanti>86623</kilometrage_garanti>
+      <note_publique>
+      <![CDATA[
+        CARNET A JOUR, SUPERBE ETAT GÉNÉRALE, VÉHICULE RÉVISÉ ET GARANTIE, FINANCEMENT ET EXTENSION DE GARANTIE JUSQU'À 72 MOIS
+      ]]>    
+      </note_publique>  
+      <equipements>
+        <equipement><![CDATA[ABS]]></equipement>
+        <equipement><![CDATA[Toit vitré]]></equipement>
+        <equipement><![CDATA[Caméra de recule]]></equipement>
+      </equipements>
+      <emission_co2>110</emission_co2>
+      <prix>6590</prix>
+      <prix_marchand></prix_marchand>
+      <garantie>6</garantie>
+      <photos>
+        <photo>https://www.tec3h.fr/passerelle/demo/vehicules/img/267833.jpg</photo>
+        <photo>https://www.tec3h.fr/passerelle/demo/vehicules/img/267834.jpg</photo>
+      </photos>
+    </vehicule>
+    <vehicule>
+      <reference>71367</reference>
+      <marque>
+        <![CDATA[
+          Peugeot
+        ]]>
+      </marque>
+      <modele>
+        <![CDATA[
+          3008
+        ]]>
+      </modele>
+      <version>
+        <![CDATA[
+          ACTIVE 1.2 PURE TECH VTI 110CV
+        ]]>
+      </version>
+      <energie>Essence</energie>
+      <mise_en_circulation>18/01/2012</mise_en_circulation>
+      <kilometrage>120000</kilometrage>
+      <couleur>Rouge</couleur>
+      <puissance_reelle>110</puissance_reelle>
+      <puissance_fiscale>5</puissance_fiscale>
+      <boite_de_vitesse>Manuelle</boite_de_vitesse>
+      <nb_portes>5</nb_portes>
+      <nb_places>5</nb_places>
+      <numero_immatriculation>ET-674-YK</numero_immatriculation>
+      <carrosserie>Berline</carrosserie>
+      <equipements>
+        <equipement>
+          <![CDATA[
+            Climatisation
+          ]]>
+        </equipement>
+      </equipements>
+      <emission_co2>110</emission_co2>
+      <prix>17000</prix>
+      <prix_marchand></prix_marchand>
+      <garantie>6</garantie>
+      <photos></photos>
+    </vehicule>
+  </vehicules>
+</client>

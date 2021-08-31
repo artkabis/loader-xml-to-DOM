@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .imageVehicule{
+            max-width:200px;
+        }
+        .row {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            max-width: 450px;
+            background: rgb(245 245 245);
+        }
+    </style>
+</head>
+<body>
+    <div id="tableBody"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        (function( $ ) {   
+            $(document).ready(function () {
+                var images=[],img1,img2,imgString="";
+                $.ajax({
+                        type: 'GET',
+                        url: './vehicules.xml',           // The file path.
+                        dataType: 'xml',    
+                        success: function(xml) {
+                            console.log("xml >>> ",xml)
+                            constructDom(xml)
+
+                        }
+                    });
+                function constructDom(xml){
+                    var cmp=0;
+                    $(xml).find('vehicule').each(function() {
+                        cmp++;
+                        var imgString = $(this).find('photo').text();
+                        console.log('images string >> ',imgString);
+                        images = imgString.split('.jpg');
+                        console.log('kwlsjhqsklfhklqsh',images)
+                        $('#tableBody').append(
+                            '<tr class="row">' +
+                                '<td>' +
+                                    $(this).find('reference').text() + '</td> ' +
+                                '<td>' +
+                                    $(this).find('marque').text() + '</td> ' +
+                                '<td>' +
+                                    $(this).find('model').text() + '</td> ' +
+                                    '<td>' +
+                                    $(this).find('energie').text() + '</td> ' +
+                                    '<td>' +
+                                    '<td>'+
+
+                                        '<img class="imageVehicule" src="'+$(this).find('photo').text().split('.jpg')[0]+'.jpg'+'" />'+
+                                    '<tr>'+
+                            '</tr>'
+                        );
+                    });
+                }
+            });
+        })(jQuery);
+    </script>
+</body>
+</html>
